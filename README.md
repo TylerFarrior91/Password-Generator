@@ -9,5 +9,9 @@ In this project I developed and delpoyed a password generator, that takes in use
 * CSS
 
 ## Links
+[GitHub URL](https://github.com/TylerFarrior91/Password-Generator)\
+[Live URL](https://tylerfarrior91.github.io/Password-Generator/)
 
 ## Screenshots
+
+![screenshot](./Assets/screenshot.png)
