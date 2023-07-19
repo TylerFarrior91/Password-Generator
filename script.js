@@ -14,11 +14,17 @@ function writePassword() {
 
 // Generate a random password
 function generatePassword() {
-  var length = 12; // Length of the password
+  var passwordLength = prompt("How long would you like your password to be?(8-128)");
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("You must choose a length between 8 - 128. Please retry");
+    generatePassword()
+  }
+
+  // Length of the password
   var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+="; // Characters to include in the password
   var password = "";
 
-  for (var i = 0; i < length; i++) {
+  for (var i = 0; i < passwordLength; i++) {
     var randomIndex = Math.floor(Math.random() * charset.length);
     password += charset.charAt(randomIndex);
   }
